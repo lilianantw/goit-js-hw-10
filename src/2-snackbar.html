@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Генератор промісів</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="snack-block">
+      <form class="form">
+        <label class="form-label form-label-delay">
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
+
+        <fieldset class="form-fieldset">
+          <legend>State</legend>
+          <div class="radio-group">
+            <label class="form-label-radio">
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label class="form-label-radio">
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="form-button">Create notification</button>
+      </form>
+    </div>
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>

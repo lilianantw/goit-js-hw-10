@@ -5,14 +5,202 @@
   |============================
 */
 /* Common styles */
-@import url('./reset.css');
+/* @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
+/* @import url('./header.css');
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+@import url('./footer.css'); */
+*/ label,
+legend {
+  font-size: 16px;
+}
+
+/* 1-timer.html */
+
+.timer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.timer {
+  gap: 24px;
+  display: flex;
+  justify-content: flex-start;
+  width: 355px;
+}
+.time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.value {
+  font-size: 40px;
+  color: #2e2f42;
+  letter-spacing: 1.6px;
+}
+
+.label {
+  font-size: 16px;
+}
+
+/* блок ввода */
+.input-block {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* окно ввода */
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 16px;
+  border: 1px solid #808080;
+}
+#datetime-picker:hover {
+  border-color: #000000; /* при наведении */
+}
+
+#datetime-picker:focus {
+  border-color: #4e75ff; /* при клике/фокусе */
+  outline: none;
+}
+
+#datetime-picker:disabled {
+  border-color: #808080;
+  background-color: #fafafa;
+}
+/* кнопка */
+.button {
+  width: 75px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #6c8cff;
+}
+
+.button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+/* 2-snackbar */
+/* Общие стили для .snack-block */
+.snack-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Стили для формы */
+.form {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 360px;
+}
+
+/* Стили для метки Delay (ms) */
+.form-label-delay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px; /* Расстояние между текстом "Delay (ms)" и полем ввода */
+  margin-bottom: 23px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+/* Стили для поля ввода Delay */
+.form-label-delay input {
+  width: 360px;
+  height: 40px;
+  box-sizing: border-box; /* Чтобы padding и border не увеличивали размер */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  color: #808080;
+  border-radius: 8px;
+}
+.form-label-delay input:hover {
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.form-label-delay input:active {
+  border: 1px solid #4e75ff;
+  outline: none;
+}
+
+/* state */
+.form-fieldset {
+  border-radius: 8px; /* Закруглённые углы */
+  border: 1px solid #808080; /* Обрамление, если нужно */
+  padding: 16px; /* Внутренние отступы */
+  margin-bottom: 16px;
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+.form-label-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Эффект при наведении */
+.form-label-radio:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+/* Эффект при нажатии */
+.form-label-radio:hover {
+  border: 1px solid #757575;
+}
+
+/* Эффект при наведении */
+.form-label-radio:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.radio-group {
+  display: flex;
+  justify-content: center; /* Центровка по горизонтали */
+  gap: 32px; /* Расстояние между радиокнопками */
+}
+
+.form-fieldset:hover {
+  border: 1px solid #000000;
+}
+
+/* Стили для кнопки Create notification */
+.form-button {
+  width: 360px;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  border: none;
+}
+.form-button:hover {
+  background-color: #6c8cff;
+}
