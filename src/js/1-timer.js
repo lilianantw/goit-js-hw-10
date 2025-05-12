@@ -51,6 +51,10 @@ startBtn.addEventListener('click', () => {
       clearInterval(timerId);
       updateTimerDisplay(0);
       iziToast.success({ message: 'Timer is finished!' });
+
+      // ✅ Виправлення — активуємо інпут і скидаємо дату
+      datetimeInput.disabled = false;
+      userSelectedDate = null;
       return;
     }
 
